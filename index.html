@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Stone Carving Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="settings">
+        <label for="num-nodes">Number of nodes:</label>
+        <select id="num-nodes">
+            <option value="6" class="rare">Rare (6)</option>
+            <option value="8" class="epic">Epic (8)</option>
+            <option value="9" class="legendary" selected>Legendary (9)</option>
+            <option value="10" class="relic">Relic (10)</option>
+        </select>
+        <input type="text" id="percent-chance" value="75%" readonly>
+    </div>
+    <div id="game">
+        <div class="line" id="line1"></div>
+        <div class="line" id="line2"></div>
+        <div class="line bad" id="line3"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
